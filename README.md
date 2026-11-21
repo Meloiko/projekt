@@ -22,14 +22,18 @@ Projekt podzielony jest na osobne moduły:
 
 ## 2. Kompilacja i uruchomienie
 
-Do zbudowania projektu potrzebny jest kompilator C++ obsługujący standard C++17 (np. MSVC `cl`) oraz biblioteka **raylib**.
+Projekt korzysta z biblioteki **raylib** oraz standardu **C++17**.
 
-Przykładowa kompilacja w wierszu poleceń:
+### Kompilacja (MSVC / Developer Command Prompt, x64)
+
+W katalogu projektu uruchom:
 
 ```bat
-cl /EHsc /std:c++17 main.cpp obiekty.cpp tryb_latwy.cpp tryb_trudny.cpp ranking.cpp /I"sciezka\do\raylib\include" /link /LIBPATH:"sciezka\do\raylib\lib" raylib.lib opengl32.lib gdi32.lib winmm.lib user32.lib shell32.lib /Fe:NeonCat.exe
+cl /EHsc /std:c++17 /MD main.cpp obiekty.cpp tryb_latwy.cpp tryb_trudny.cpp ranking.cpp /I"sciezka\do\raylib\include" /Fe:NeonCat.exe /link /LIBPATH:"sciezka\do\raylib\lib" raylib.lib opengl32.lib gdi32.lib winmm.lib user32.lib shell32.lib
 ```
+A następnie uruchom grę:
 
+.\NeonCat.exe
 ---
 
 ## 3. Przykłady działania programu

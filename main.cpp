@@ -106,17 +106,17 @@ int main() {
                 DrawText("NEONCAT", oknoSzerokosc / 2 - MeasureText("NEONCAT", 50) / 2, 180, 50, Color{0, 240, 255, 255});
                 DrawText("Wybierz tryb rozgrywki:", oknoSzerokosc / 2 - MeasureText("Wybierz tryb rozgrywki:", 20) / 2, 260, 20, RAYWHITE);
 
-                DrawText("[ 1 ] Tryb Łatwy", 320, 340, 20, GOLD);
+                DrawText("[ 1 ] Tryb Latwy", 320, 340, 20, GOLD);
                 DrawText("[ 2 ] Tryb Trudny", 320, 390, 20, MAGENTA);
-                DrawText("[ 3 ] Tablica Wyników (Rankingi)", 320, 440, 20, SKYBLUE);
-                DrawText("[ ESC ] Wyjście z gry", 320, 510, 20, LIGHTGRAY);
+                DrawText("[ 3 ] Tablica Wynikow (Rankingi)", 320, 440, 20, SKYBLUE);
+                DrawText("[ ESC ] Wyjscie z gry", 320, 510, 20, LIGHTGRAY);
 
                 DrawText("Sterowanie w grze: Strzalki / W, A, S, D", 320, 620, 18, GRAY);
             }
             else if (stan == WPISZ_NICK) {
                 DrawText("NOWY REKORD TOP 5!", oknoSzerokosc / 2 - MeasureText("NOWY REKORD TOP 5!", 32) / 2, 170, 32, GOLD);
 
-                string infoPunkty = "Twój wynik: " + odmiana(ostatniePunkty);
+                string infoPunkty = "Twoj wynik: " + odmiana(ostatniePunkty);
                 DrawText(infoPunkty.c_str(), oknoSzerokosc / 2 - MeasureText(infoPunkty.c_str(), 24) / 2, 230, 24, SKYBLUE);
 
                 DrawText("Wpisz swoj nick i nacisnij ENTER:", oknoSzerokosc / 2 - MeasureText("Wpisz swoj nick i nacisnij ENTER:", 20) / 2, 300, 20, RAYWHITE);
@@ -133,7 +133,7 @@ int main() {
                 DrawText("TABLICA WYNIKOW (TOP 5)", oknoSzerokosc / 2 - MeasureText("TABLICA WYNIKOW (TOP 5)", 30) / 2, 80, 30, GOLD);
 
                 vector<WynikGracza> rankLabirynt = wczytajWyniki("wyniki_labirynt.txt");
-                DrawText("--- Tryb Labirynt ---", 180, 160, 20, SKYBLUE);
+                DrawText("--- Tryb Latwy ---", 180, 160, 20, SKYBLUE);
                 int yOffset = 200;
                 if (rankLabirynt.empty()) {
                     DrawText("Brak wynikow.", 180, yOffset, 16, GRAY);
@@ -148,7 +148,7 @@ int main() {
                 }
 
                 vector<WynikGracza> rankKrysztaly = wczytajWyniki("wyniki_krysztaly.txt");
-                DrawText("--- Tryb Krysztaly ---", 580, 160, 20, MAGENTA);
+                DrawText("--- Tryb Trudny ---", 580, 160, 20, MAGENTA);
                 yOffset = 200;
                 if (rankKrysztaly.empty()) {
                     DrawText("Brak wynikow.", 580, yOffset, 16, GRAY);
