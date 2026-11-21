@@ -1,7 +1,7 @@
 #include "raylib.h"
-#include "tryb_latwy.hpp"
-#include "tryb_trudny.hpp"
-#include "ranking.hpp"
+#include "tryb_latwy.h"
+#include "tryb_trudny.h"
+#include "ranking.h"
 #include <vector>
 #include <string>
 #include <algorithm>
