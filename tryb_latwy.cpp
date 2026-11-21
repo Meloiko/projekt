@@ -1,6 +1,6 @@
 #include "raylib.h"
-#include "obiekty.hpp"
-#include "tryb_latwy.hpp"
+#include "obiekty.h"
+#include "tryb_latwy.h"
 #include <vector>
 
 using namespace std;

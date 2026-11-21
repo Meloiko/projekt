@@ -1,4 +1,4 @@
-#include "ranking.hpp"
+#include "ranking.h"
 #include <fstream>
 #include <algorithm>
 #include <functional>
